@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLOps Vision | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">MLOps<span>Vision</span></div>
+
+        <div class="menu-title">MENU PRINCIPAL</div>
+        <nav>
+            <a href="#" class="active">◈ Overview</a>
+            <a href="#">▣ Models</a>
+            <a href="#">◉ Experiments</a>
+            <a href="#">⌘ ML Pipelines</a>
+            <a href="#">▥ Monitoring</a>
+            <a href="#">▦ Infrastructure</a>
+        </nav>
+
+        <div class="menu-title">RESSOURCES</div>
+        <nav>
+            <a href="#">▤ Documentation</a>
+            <a href="#">⚙ Settings</a>
+        </nav>
+
+        <div class="profile">
+            <div class="avatar">HM</div>
+            <div>
+                <strong>Honoré Modia</strong>
+                <small>MLOps Engineer</small>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h2>Dashboard Overview</h2>
+                <p>Welcome back to your AI management platform.</p>
+            </div>
+            <div class="top-actions">
+                <span class="status">● System Online</span>
+                <div class="avatar">HM</div>
+            </div>
+        </header>
+
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">MLOPS CONTROL CENTER</p>
+                <h1>AI Model Management Platform</h1>
+                <p>Manage, deploy and monitor your machine learning models.</p>
+            </div>
+            <div class="neural">✺</div>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Total Models</span>
+                <h2>24</h2>
+                <small class="green">↑ 12% this month</small>
+            </div>
+
+            <div class="stat-card">
+                <span>Active Experiments</span>
+                <h2>18</h2>
+                <small class="green">↑ 8% this week</small>
+            </div>
+
+            <div class="stat-card">
+                <span>Deployments</span>
+                <h2>12</h2>
+                <small class="green">↑ 4 new deployments</small>
+            </div>
+
+            <div class="stat-card">
+                <span>Model Accuracy</span>
+                <h2>98.6%</h2>
+                <small class="green">↑ 2.4% improvement</small>
+            </div>
+
+        </section>
+
+        <section class="content-grid">
+
+            <div class="panel performance">
+                <div class="panel-header">
+                    <h3>Model Performance</h3>
+                    <span class="tag">Last 7 days</span>
+                </div>
+
+                <div class="chart">
+                    <div class="chart-lines">
+                        <span>100%</span>
+                        <span>75%</span>
+                        <span>50%</span>
+                        <span>25%</span>
+                        <span>0%</span>
+                    </div>
+
+                    <div class="bars">
+                        <div style="--height:65%"><span>Mon</span></div>
+                        <div style="--height:78%"><span>Tue</span></div>
+                        <div style="--height:70%"><span>Wed</span></div>
+                        <div style="--height:90%"><span>Thu</span></div>
+                        <div style="--height:82%"><span>Fri</span></div>
+                        <div style="--height:95%"><span>Sat</span></div>
+                        <div style="--height:88%"><span>Sun</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>Infrastructure</h3>
+                    <span class="green">● Healthy</span>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-info">
+                        <span>CPU Usage</span>
+                        <strong>42%</strong>
+                    </div>
+                    <div class="progress"><div style="width:42%"></div></div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-info">
+                        <span>Memory Usage</span>
+                        <strong>68%</strong>
+                    </div>
+                    <div class="progress"><div style="width:68%"></div></div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-info">
+                        <span>GPU Usage</span>
+                        <strong>84%</strong>
+                    </div>
+                    <div class="progress"><div style="width:84%"></div></div>
+                </div>
+
+                <div class="resource">
+                    <div class="resource-info">
+                        <span>Storage</span>
+                        <strong>35%</strong>
+                    </div>
+                    <div class="progress"><div style="width:35%"></div></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="panel models-panel">
+            <div class="panel-header">
+                <h3>Recent Models</h3>
+                <a href="#">View all →</a>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MODEL NAME</th>
+                            <th>VERSION</th>
+                            <th>FRAMEWORK</th>
+                            <th>ACCURACY</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Image Classification</td>
+                            <td>v2.1</td>
+                            <td>TensorFlow</td>
+                            <td>98.6%</td>
+                            <td><span class="badge success">Production</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fraud Detection</td>
+                            <td>v1.4</td>
+                            <td>PyTorch</td>
+                            <td>96.2%</td>
+                            <td><span class="badge success">Production</span></td>
+                        </tr>
+                        <tr>
+                            <td>Customer Prediction</td>
+                            <td>v3.0</td>
+                            <td>Scikit-learn</td>
+                            <td>94.8%</td>
+                            <td><span class="badge warning">Testing</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sentiment Analysis</td>
+                            <td>v1.2</td>
+                            <td>Hugging Face</td>
+                            <td>97.1%</td>
+                            <td><span class="badge success">Production</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            MLOps Vision © 2026 — AI Model Management Platform
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
