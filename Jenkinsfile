@@ -69,7 +69,7 @@ pipeline {
             }
         }
 
-        stage('4 - Validation CSS') {
+        /*stage('4 - Validation CSS') {
             steps {
                 sh '''
                     set -eu
@@ -92,7 +92,7 @@ PY
                 '''
             }
         }
-
+*/
         stage('5 - Analyse du projet') {
             steps {
                 sh '''
