@@ -145,10 +145,6 @@ stage('4 - Validation CSS') {
         }
 
         stage('7 - Deploiement Nginx') {
-            when {
-                branch 'main'
-            }
-
             steps {
                 sh '''
                     set -eu
@@ -181,10 +177,6 @@ stage('4 - Validation CSS') {
         }
 
         stage('8 - Test HTTP') {
-            when {
-                branch 'main'
-            }
-
             steps {
                 sh '''
                     set -eu
