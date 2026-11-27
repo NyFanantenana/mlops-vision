@@ -69,6 +69,11 @@ pipeline {
             }
         }
 
+       
+        
+        
+        
+        
         /*stage('4 - Validation CSS') {
             steps {
                 sh '''
@@ -93,6 +98,28 @@ PY
             }
         }
 */
+
+stage('4 - Validation CSS') {
+            steps {
+                sh '''
+                    set -eu
+
+                    test -s css/style.css
+
+                    open_braces=$(tr -cd '{' < css/style.css | wc -c)
+                    close_braces=$(tr -cd '}' < css/style.css | wc -c)
+
+                    test "$open_braces" -gt 0
+                    test "$open_braces" -eq "$close_braces"
+
+                    echo "Verification CSS reussie."
+                '''
+            }
+        }
+
+
+
+        
         stage('5 - Analyse du projet') {
             steps {
                 sh '''
