@@ -13,7 +13,7 @@ pipeline {
     parameters {
         string(
             name: 'DEPLOY_PORT',
-            defaultValue: '8081',
+            defaultValue: '8085',
             description: 'Port HTTP du site Nginx'
         )
     }
