@@ -1,0 +1,59 @@
+# Pipeline et automatisation
+workflow-aggregator
+pipeline-stage-view
+pipeline-utility-steps
+build-timeout
+timestamper
+ws-cleanup
+conditional-buildstep
+parameterized-trigger
+
+# Git et gestion du code
+git
+github
+github-branch-source
+gitlab-plugin
+scm-api
+credentials
+ssh-credentials
+plain-credentials
+
+# Build et compilation
+maven-plugin
+gradle
+ant
+junit
+htmlpublisher
+
+# Docker et conteneurs
+docker-workflow
+docker-plugin
+
+# Qualite et securite du code
+sonar
+warnings-ng
+dependency-check-jenkins-plugin
+
+# Infrastructure as Code et automatisation
+ansible
+terraform
+configuration-as-code
+
+# Kubernetes et Cloud
+kubernetes
+amazon-ecr
+aws-credentials
+
+# Monitoring et notifications
+prometheus
+email-ext
+mailer
+slack
+
+# Securite et administration Jenkins
+matrix-auth
+role-strategy
+authorize-project
+job-dsl
+credentials-binding
+warnings-ng
